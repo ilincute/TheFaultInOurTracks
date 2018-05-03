@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+* {
+    font-family: 'Amatic SC', cursive;
+    text-decoration-line: none;
+}
+*[onclick] {
+    cursor: pointer;
+}
+body {
+    background-color: #FFE1C6;
+    margin: 0;
+}
+.header-page {
+    background-color:	white;
+    display: flex;
+    -webkit-box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
+-moz-box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
+box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
+    
+}
+
+
+
+.navigation {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.list li {
+    list-style-type: none;
+}
+
+.element {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 77px;
+    width: 77px;
+    padding: 18px;
+    font-size: 23px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border-color: #3CB371;
+    background-color: #ddd7d3;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.red:hover {
+    background-color: #D84797;
+}
+.red-selected {
+    background-color: #D84797;
+}
+.orange:hover {
+    background-color: #FF934F;
+}
+.orange-selected {
+    background-color: #FF934F;
+}
+.blue:hover {
+    background-color: #028090;
+}
+.blue-selected {
+    background-color: #028090;
+}
+.purple:hover {
+    background-color: #d7b4f5; 
+}
+.purple-selected {
+    background-color: #d7b4f5; 
+}
+.element a {
+    color: #ffffff;
+}
+p {
+    font-family: "Palatino Linotype";
+    font-size: 40px;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.bottom-nav {
+    background-color:#66CDAA;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-nav a {
+    float: center; 
+    color: black;
+    image-orientation: center; 
+    padding: 14px 16 px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
