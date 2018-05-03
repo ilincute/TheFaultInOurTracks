@@ -10,13 +10,16 @@ body {
     background-color: #FFE1C6;
     margin: 0;
 }
+
 .header-page {
     background-color:	white;
     display: flex;
     -webkit-box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
--moz-box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
-box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
-    
+    -moz-box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
+    box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);   
+    position: fixed;
+    width: 100vw;
+    z-index: 3000;
 }
 
 
@@ -28,8 +31,8 @@ box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
 }
 .list {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     align-items: center;
 }
 
@@ -39,12 +42,12 @@ box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
 
 .element {
     display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 77px;
-    width: 77px;
-    padding: 18px;
-    font-size: 23px;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    height: 5rem;
+    width: 5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
@@ -55,14 +58,29 @@ box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
     justify-content: center;
     color: #ffffff;
 }
+
+
+/*------------------Colors------------*/
+.light-blue, .pink, .red, .orange, .blue, .purple, .white{
+    transition: all 1s ease;
+}
+.light-blue {
+    background-color: #BFDBF7;
+}
+.pink {
+    background-color:#F7A9C9;
+    color: white;
+}
 .red:hover {
     background-color: #D84797;
+    color: white;
 }
 .red-selected {
     background-color: #D84797;
 }
 .orange:hover {
     background-color: #FF934F;
+    color: white;
 }
 .orange-selected {
     background-color: #FF934F;
@@ -79,37 +97,108 @@ box-shadow: 2px 6px 49px -16px rgba(166,166,166,1);
 .purple-selected {
     background-color: #d7b4f5; 
 }
+.pink, .light-blue, .purple{
+    color: white;
+}
 .element a {
     color: #ffffff;
 }
-p {
-    font-family: "Palatino Linotype";
-    font-size: 40px;
-    padding-top: 100px;
-    padding-left: 20px;
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
 }
 
-.bottom-nav {
-    background-color:#66CDAA;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/*--------Left and right sections --------------*/
+
+.left-page, .right-page {
+    width: 18rem;
+}
+.left-page, .right-page {
+    display: flex;
+    align-items: center;
+}
+.left-page{
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+.right-page {
+    justify-content: flex-start;
+    margin-left: 5rem;
 }
 
-.bottom-nav a {
-    float: center; 
-    color: black;
-    image-orientation: center; 
-    padding: 14px 16 px;
-    text-decoration: none;
-    font-size: 17px;
+.left-page i, .right-page i {
+    font-size: 3rem;
+    cursor: pointer;
 }
 
-img {
-    height: 30px;
-    width: 30px;
-    display: block;
+
+
+
+
+.content {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-top-style: solid;
+    border-top-color: #adadae;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #adadae;
+    border-bottom-width: 1px;
+}
+.myslides {
+    display: flex;
+    justify-content: center;
+}
+.paragraph{
+    margin-right: 6rem;
+    font-size: 2rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.paragraph .author {
     margin-left: auto;
-    margin-right: auto;
 }
+.paragraph * {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.paragraph, .image-quote {
+    display: flex;
+    align-items: center;
+}
+.quote, .author {
+    font-size: 2.15rem;
+    line-height: 1.5;
+}
+.main {
+    margin: 0;
+}
+
+.image {
+    width: 27vw;
+    height: 34vh;
+    border: solid #BDBDBD 1px; 
+	box-shadow: 8px 9px 5px rgba(0, 0, 0, 0.1)  ; 
+	-webkit-box-shadow: 8px 9px 5px rgba(0, 0, 0, 0.1)  ; 
+	-moz-box-shadow: 8px 9px 5px rgba(0, 0, 0, 0.1)  ; 
+}
+.bottom-nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.buttons-icon i{
+    color: #D84797;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; 
+}
+

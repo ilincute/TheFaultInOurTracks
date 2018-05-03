@@ -4,29 +4,54 @@
         <meta charset="UTF-8">
         <title>TheFaultInOurTracks</title>
         <link href="../stylesheet/MyProject.css" type="text/css" rel="stylesheet">
+        <link href="../stylesheet/contact.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     </head>
     <body>
          <header class="header-page">
              <nav class="navigation">
                 <ul class="list">
-                    <li class="element red" onclick="location.href='../index.html'"><a>Home</a></li>
-                    <li class="element orange" onclick="location.href='../soundtrack/index.html'"><a>Soundtrack</a></li>
-                    <li class="element blue" onclick="location.href='../about/index.html'"><a>About</a></li>
-                    <li class="element purple-selected"><a>Contact</a></li>
+                    <li class="element red animated fadeIn" onclick="location.href='../index.html'"><a>Home</a></li>
+                    <li class="element orange animated fadeIn" onclick="location.href='../soundtrack/index.html'"><a>Soundtrack</a></li>
+                    <li class="element blue animated fadeIn" onclick="location.href='../about/index.html'"><a>About</a></li>
+                    <li class="element purple-selected animated fadeIn"><a>Contact</a></li>
                 </ul>
             </nav>
          </header>
 
-        <p> “Maybe 'okay' will be our 'always” <br> <br>― John Green, The Fault in Our Stars</p>
+        <main class="container">
+            <div class="title-page animated fadeIn">
+              <h1>Contact Us</h1>
+              <p>Leave us a message:</p>
+            </div>
+            <div class="form-section animated fadeIn">
+                <form action="">
+                  <label class="label-contact" for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <div class="bottom-nav">
-            <nav class="navigation";
-            <a class="active" href="https://twitter.com/TFIOSUK?lang=en" target="_blank"> 
-                <img src='Twitter.png' alt="Twitter icon"> </a>
-            <a href="https://www.instagram.com/faultinourstarsmovie/?hl=en" target="_blank"> 
-                <img src='Instagram.png' alt="Instagram icon"> </a>
-            <a href="https://www.facebook.com/faultinourstarsmovie/" target="_blank"> 
-                <img src='Facebook.png' alt="Facebook icon"> </a>
-        </div>
+                  <label class="label-contact"for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">#
+
+                  <label class="label-contact" for="email">Email Address</label>
+                  <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
+
+                  <label class="label-contact" for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+                  <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+          
+        <footer class="bottom-nav">
+            <div class="buttons-icon">
+               <i class="fab fa-facebook-square"></i>
+           
+               <i class="fab fa-instagram"></i>
+                   
+               <i class="fab fa-twitter"></i>
+            </div>
+        </footer>
     </body>
 </html>

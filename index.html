@@ -4,29 +4,105 @@
         <meta charset="UTF-8">
         <title>TheFaultInOurTracks</title>
         <link href="./stylesheet/MyProject.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+        <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <script src="./javascript//backgrounds.js"></script>
+        <script src="./javascript/slideShow.js"></script>
     </head>
-    <body>
-         <header class="header-page">
+    <body id="body" class="" onload="startSlide();">
+         <header class="header-page" onmouseover="changeBodyBackground('white'); setContor(true);">
              <nav class="navigation">
                 <ul class="list">
-                    <li class="element red-selected"><a>Home</a></li>
-                    <li class="element orange" onclick="location.href='./soundtrack/index.html'"><a>Soundtrack</a></li>
-                    <li class="element blue" onclick="location.href='./about/index.html'"><a>About</a></li>
-                    <li class="element purple" onclick="location.href='./contact/index.html'"><a>Contact</a></li>
+                    <li class="element red-selected animated fadeIn" ><a>Home</a></li>
+                    <li class="element orange animated fadeIn" onclick="location.href='./soundtrack/index.html'"><a>Soundtrack</a></li>
+                    <li class="element blue animated fadeIn" onclick="location.href='./about/index.html'"><a>About</a></li>
+                    <li class="element purple animated fadeIn" onclick="location.href='./contact/index.html'"><a>Contact</a></li>
                 </ul>
             </nav>
          </header>
+         <main class="main">
+            <section class="left-page" onmouseover="changeBodyBackground('purple');setContor(false);">
+                <i class="material-icons" onclick="nextPhoto(-1)">keyboard_arrow_left</i>
+            </section>
+            <section class="content" onmousemove="changeBodyBackground('light-blue');setContor(false);">
+                <div class="myslides animated fadeIn">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“Maybe 'okay' will be our 'always.” </p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                    <section class="image-quote">
+                        <img src="./images/1.jpg" alt="image" class="image">
+                    </section>
+                </div>
+                <div class="myslides animated fadeIn" style="display: none">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“As he read, I fell in love the way you fall asleep: slowly, and then all at once.”</p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                        <section class="image-quote">
+                            <img src="./images/3.jpg" alt="image" class="image">
+                    </section>
+                </div>
+                <div class="myslides animated fadeIn" style="display: none">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“The marks humans leave are too often scars.”</p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                        <section class="image-quote">
+                            <img src="./images/6.jpg" alt="image" class="image">
+                    </section>
+                </div>
+                <div class="myslides animated fadeIn" style="display: none">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“Grief does not change you, Hazel. It reveals you.”</p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                        <section class="image-quote">
+                            <img src="./images/7.jpg" alt="image" class="image">
+                    </section>
+                </div>
+                <div class="myslides animated fadeIn" style="display: none">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“You are so busy being YOU that you have no idea how utterly unprecedented you are.”</p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                        <section class="image-quote">
+                            <img src="./images/8.jpg" alt="image" class="image">
+                    </section>
+                </div>
+                <div class="myslides animated fadeIn" style="display: none">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“Some infinities are bigger than other infinities.”</p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                        <section class="image-quote">
+                            <img src="./images/10.jpg" alt="image" class="image">
+                    </section>
+                </div>
+                <div class="myslides animated fadeIn" style="display: none">
+                    <section class="paragraph" id="paragraph">
+                        <p class="quote">“The world is not a wish-granting factory.”</p>
+                        <p class="author">- Hazel Grace</p>
+                    </section>
+                        <section class="image-quote">
+                            <img src="./images/11.jpg" alt="image" class="image">
+                    </section>
+                </div>
+            </section>
+            <section class="right-page" onmousemove="changeBodyBackground('pink');setContor(false);">
+                <i class="material-icons" onclick="nextPhoto(+1)">keyboard_arrow_right</i>
+            </section>
+         </main>
+        <footer class="bottom-nav">
+            <div class="buttons-icon">
+                <i class="fab fa-facebook-square"></i>
 
-        <p> “Maybe 'okay' will be our 'always” <br> <br>― John Green, The Fault in Our Stars</p>
-
-        <div class="bottom-nav">
-            <nav class="navigation";
-            <a class="active" href="https://twitter.com/TFIOSUK?lang=en" target="_blank"> 
-                <img src='Twitter.png' alt="Twitter icon"> </a>
-            <a href="https://www.instagram.com/faultinourstarsmovie/?hl=en" target="_blank"> 
-                <img src='Instagram.png' alt="Instagram icon"> </a>
-            <a href="https://www.facebook.com/faultinourstarsmovie/" target="_blank"> 
-                <img src='Facebook.png' alt="Facebook icon"> </a>
-        </div>
+                <i class="fab fa-instagram"></i>
+        
+                <i class="fab fa-twitter"></i>
+            </div>
+        </footer>
     </body>
 </html>

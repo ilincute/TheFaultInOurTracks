@@ -1,1 +1,0 @@
-object.style.backgroundImage="url(background2.jpg)"
