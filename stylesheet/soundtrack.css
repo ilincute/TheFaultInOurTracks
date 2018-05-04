@@ -1,0 +1,35 @@
+.content-soundtracks {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.soundtrack {
+    display: flex;
+}
+.iframe {
+    border: none;
+}
+.informations {
+    border-top-style: solid;
+    border-top-color: #aaaaaa;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #aaaaaa;
+    border-bottom-width: 1px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sound-title {
+    font-size: 2rem;
+    margin: 0;
+}

@@ -11,8 +11,8 @@
         <script src="./javascript//backgrounds.js"></script>
         <script src="./javascript/slideShow.js"></script>
     </head>
-    <body id="body" class="" onload="startSlide();">
-         <header class="header-page" onmouseover="changeBodyBackground('white'); setContor(true);">
+    <body id="body" class="">
+         <header class="header-page" onmouseover="changeBodyBackground('white');">
              <nav class="navigation">
                 <ul class="list">
                     <li class="element red-selected animated fadeIn" ><a>Home</a></li>
@@ -22,11 +22,18 @@
                 </ul>
             </nav>
          </header>
-         <main class="main">
-            <section class="left-page" onmouseover="changeBodyBackground('purple');setContor(false);">
+         <section class="intro-page" id="intro-page">
+             <h1 class="intro-title animated bounce">The Fault in our Tracks</h1>
+             <p class="description-title">If you'd like to get on an emotional rollercoaster, with some really nice songs in the background</p>
+             <p class="description-title">and a story that will make you think twice about how wonderful life is, then come on board! We have tissues.</p>
+             <i class="material-icons big-icon" style="color: #d84897; font-size: 3rem; cursor: pointer; margin-top: 1rem;" onclick="getMain();">expand_more</i>
+             
+         </section>
+         <main class="main" style="display: none;" id="main-page">
+            <section class="left-page" onmouseover="changeBodyBackground('purple');">
                 <i class="material-icons" onclick="nextPhoto(-1)">keyboard_arrow_left</i>
             </section>
-            <section class="content" onmousemove="changeBodyBackground('light-blue');setContor(false);">
+            <section class="content" onmousemove="changeBodyBackground('light-blue');">
                 <div class="myslides animated fadeIn">
                     <section class="paragraph" id="paragraph">
                         <p class="quote">“Maybe 'okay' will be our 'always.” </p>
@@ -97,11 +104,11 @@
          </main>
         <footer class="bottom-nav">
             <div class="buttons-icon">
-                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/faultinourstarsmovie/'"></i>
 
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram" onclick="location.href='https://www.instagram.com/faultinourstarsmovie/?hl=en'"></i>
         
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter" onclick="location.href='https://twitter.com/thefaultmovie?lang=en'"></i>
             </div>
         </footer>
     </body>

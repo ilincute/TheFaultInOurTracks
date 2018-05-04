@@ -132,10 +132,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
-
 .content {
     height: 75vh;
     display: flex;
@@ -143,10 +139,8 @@ body {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     border-top-style: solid;
-    border-top-color: #adadae;
     border-top-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #adadae;
     border-bottom-width: 1px;
 }
 .myslides {
@@ -201,4 +195,23 @@ body {
     margin-left: 0.5rem;
     margin-right: 0.5rem; 
 }
-
+.intro-page{
+    padding-top: 15rem;
+    height: 74vh;
+    width: 98.9vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.intro-title {
+    font-size: 4rem;
+}
+.description-title {
+    font-size: 1.5rem;
+    line-height:  0.1;
+}
+.big-icon:hover {
+    font-size: 4rem !important;
+    transition: all 0.5s ease;
+}

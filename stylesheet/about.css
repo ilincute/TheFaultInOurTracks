@@ -1,0 +1,29 @@
+.content-about {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph-about, .image-paragraph {
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+}
+
+.paragraph-about {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-top: 4.5rem;
+
+}
+
+.image-john {
+    width: 39vw;
+    height: 83vh;
+    border: solid #BDBDBD 1px; 
+} 
+
+.quote {
+    font-size: 1.35rem;
+    line-height: 1.5;
+}

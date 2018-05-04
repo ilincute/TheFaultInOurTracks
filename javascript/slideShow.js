@@ -1,5 +1,4 @@
 var slideIndex = 1;
-var contor = true;
 showSlide(slideIndex);
 
 function nextPhoto(n) {
@@ -21,17 +20,12 @@ function showSlide(n) {
     x[slideIndex-1].style.display = "flex"; 
 }
 
-function startSlide() {
-    if(contor == true){
-        setTimeout(function(){ 
-            nextPhoto(+1);
-            startSlide();
-         }, 3000);
-    }
+function getMain() {
+    document.getElementById('intro-page').classList.add('animated');
+    document.getElementById('intro-page').classList.add('slideOutUp');
+    document.getElementById('main-page').style.display = 'flex';
+    setTimeout( () => {
+        document.getElementById('intro-page').style.display = 'none';
+    }, 1000);
 
-}
-function setContor(value) {
-    let ok = 0;
-    contor = value;
-    console.log(contor);
 }
